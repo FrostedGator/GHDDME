@@ -25,7 +25,7 @@ function createMap() {
     var map = L.map('map', {
         center: [36.00, -5],//Coordinated to center the map
         zoom: 7, //zoom level
-        layers:darkTerrain //default base
+        layers: Dark //dark base
     });
     
     //basemap control layers
