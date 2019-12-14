@@ -9,13 +9,13 @@ function createMap() {
     var apitoken = 'pk.eyJ1Ijoid29vbHktZ2F0b3Ita3VwbyIsImEiOiJjazJvM2l3MG0wN2IxM2dwYnBkeXMwMzNvIn0.t2SQOlFI55bLWqBUqfJNMg'; 
     
     //Stanard MaxBox Styles URL
-    var mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={apitoken}';
+    var mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={token}';
     
     //Custom MapBox Style URL
     var mbStyleUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/256/{z}/{x}/{y}?access_token={token}'; s
     
     //custom basemaps
-    var customBasemap = L.tileLayer(mbStyleUrl, {id: 'wooly-gator-kupo/ck2o3oae50d451cpbnf46lpe2', token: token,  attribution: mbAttr});
+    var customBasemap = L.tileLayer(mbStyleUrl, {id: 'wooly-gator-kupo/ck2o3oae50d451cpbnf46lpe2', token: apitoken,  attribution: mbAttr});
     
     //different basemap variables
     //var MapBox   = L.tileLayer(mbUrl, {id: 'mapbox.light', token: apitoken, attribution: mbAttr});
