@@ -36,7 +36,7 @@ function createMap() {
     };
     
     L.control.layers(baseLayers).addTo(map);
-    
+     
 }
 
 //default call function
