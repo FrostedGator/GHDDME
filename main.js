@@ -17,9 +17,9 @@ function createMap() {
     var customBasemap = L.tileLayer(mbStyleUrl, {id: 'wooly-gator-kupo/ck2o3oae50d451cpbnf46lpe2', token: apitoken,  attribution: mbAttr});
     
     //different basemap variables
-    var MapBox   = L.tileLayer(mbUrl, {id: 'mapbox.light', token: apitoken, attribution: mbAttr});
+    //var MapBox   = L.tileLayer(mbUrl, {id: 'mapbox.light', token: apitoken, attribution: mbAttr});
     var Dark  = L.tileLayer(mbUrl, {id: 'mapbox.dark', token: apitoken,  attribution: mbAttr});
-    var Outdoors = L.tileLayer(mbUrl, {id: 'mapbox.outdoors', token: apitoken,  attribution: mbAttr});
+    //var Outdoors = L.tileLayer(mbUrl, {id: 'mapbox.outdoors', token: apitoken,  attribution: mbAttr});
     
     //maps to be created
     var map = L.map('map', {
@@ -30,9 +30,9 @@ function createMap() {
     
     //basemap control layers
     var baseLayers = {
-        "MapBox": MapBox,
-		"Outdoors": Outdoors,
-		"Dark": Dark
+        //"MapBox": MapBox,
+	//"Outdoors": Outdoors,
+	"Dark": Dark
     };
     
     L.control.layers(baseLayers).addTo(map);
