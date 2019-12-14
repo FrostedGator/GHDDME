@@ -33,7 +33,7 @@ function createMap() {
     var baseLayers = {
         //"MapBox": MapBox,
 	//"Outdoors": Outdoors,
-	"dark": dark
+	"dark": dark,
     };
     
     L.control.layers(baseLayers).addTo(map);
