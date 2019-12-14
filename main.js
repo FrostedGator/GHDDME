@@ -2,8 +2,9 @@
 function createMap() {
 
     //opening statement URLs
-    var mbAttr = '<a href="http://openstreetmap.org">OpenStreetMap</a> |' + ' <a href="http://mapbox.com">Mapbox</a> |' + '  <a href="https://wooly-gator-kupo.github.io/">UFO2019 Robert Eschbaugh</a>';
-    
+    var mbAttr = '<a href="http://openstreetmap.org">OpenStreetMap</a> |' + ' <a href="http://mapbox.com">Mapbox</a> |  <a href="https://wooly-gator-kupo.github.io/">UFO2019 Robert Eschbaugh</a>';
+    // removed "' + '" before URL
+	
     //Mapbox API Token
     var apitoken = 'pk.eyJ1Ijoid29vbHktZ2F0b3Ita3VwbyIsImEiOiJjazJvM2l3MG0wN2IxM2dwYnBkeXMwMzNvIn0.t2SQOlFI55bLWqBUqfJNMg'; 
     
