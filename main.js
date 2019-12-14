@@ -19,21 +19,21 @@ function createMap() {
     
     //different basemap variables
     //var MapBox   = L.tileLayer(mbUrl, {id: 'mapbox.light', token: apitoken, attribution: mbAttr});
-    var Dark  = L.tileLayer(mbUrl, {id: 'mapbox.dark', token: apitoken,  attribution: mbAttr});
+    var dark  = L.tileLayer(mbUrl, {id: 'mapbox.dark', token: apitoken,  attribution: mbAttr});
     //var Outdoors = L.tileLayer(mbUrl, {id: 'mapbox.outdoors', token: apitoken,  attribution: mbAttr});
     
     //maps to be created
     var map = L.map('map', {
         center: [36.00, -5],//map center coordination 
         zoom: 7, //zoom level
-        layers: Dark //dark base
+        layers: dark //dark base
     });
     
     //basemap control layers
     var baseLayers = {
         //"MapBox": MapBox,
 	//"Outdoors": Outdoors,
-	"Dark": Dark
+	"dark": dark
     };
     
     L.control.layers(baseLayers).addTo(map);
@@ -42,3 +42,5 @@ function createMap() {
 
 //default call function
 $(document).ready(createMap);
+
+//Dark changed to dark on 12/13/2019
